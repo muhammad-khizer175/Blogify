@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("./partials/head") %>
+    <title>signin</title>
+  </head>
+  <body>
+    <%- include("./partials/nav") %>
+    
+    <form class="container mt-4" action="/user/signin" method="post">
+      <h1>Sign In</h1>
+      
+      <div class="mb-3 mt-4">
+        <label for="theEmail" class="form-label">Email address</label>
+        <input
+          type="email"
+          class="form-control"
+          id="theEmail"
+          placeholder="name@example.com"
+          name="email"
+        />
+      </div>
+      <label for="inputPassword5" class="form-label">Password</label>
+      <input
+        type="password"
+        id="inputPassword5"
+        class="form-control"
+        aria-describedby="passwordHelpBlock"
+        name="password"
+      />
+      <button type="submit" class="btn btn-dark mt-3">Sign up</button>
+    </form>
+    <%- include("./partials/script") %>
+  </body>
+</html>
